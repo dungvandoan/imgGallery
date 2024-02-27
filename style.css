@@ -1,0 +1,32 @@
+.gallery {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1;
+  opacity: 0;
+  pointer-events: none;
+  transform: scale(0.8);
+  transition: 0.25s;
+}
+
+.gallery.show {
+  opacity: 1;
+  pointer-events: auto;
+  transform: scale(1);
+}
+
+.close {
+  color: white;
+  font-size: 35px;
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  cursor: pointer;
+}
+
+.hide {
+  display: none;
+}
